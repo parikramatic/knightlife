@@ -48,7 +48,7 @@
 
               current = (current < images.length - 1)? current + 1: 0;
             
-            }, 6000);
+            }, 9000);
         });
 
 
