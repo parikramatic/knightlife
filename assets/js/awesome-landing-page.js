@@ -25,7 +25,44 @@
                 }
             }
 
+            // Update the year
+            $("span#currentYear").text(new Date().getFullYear());
+
+            // Profile images to cycle through
+            var images = [
+                "assets/img/faces/profile1.png",
+                "assets/img/faces/profile2.png",
+                "assets/img/faces/profile3.png",
+                "assets/img/faces/profile4.png"
+            ]
+
+            var current = 0;
+            setInterval(function(){
+                        
+              //$('#HeroFace').attr('src', images[current]);
+
+                $('#HeroFace').fadeOut(400, function() {
+                    $("#HeroFace").attr('src', images[current]);
+                })
+                .fadeIn(220);
+
+              current = (current < images.length - 1)? current + 1: 0;
+            
+            }, 6000);
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         $(window).on('scroll', function() {
             responsive = $(window).width();
