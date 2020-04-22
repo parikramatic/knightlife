@@ -21,12 +21,28 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
 }
 
 
+::-moz-selection { /* Code for Firefox */
+  color: rgb(233, 233, 233);
+  background: rgb(255, 124, 124);
+}
+
+::selection {
+  color: rgb(233, 233, 233);
+  background: rgb(255, 124, 124);
+}
+
 .shadowtext {
-  text-shadow: 3px 4px 4px rgba(43, 42, 42, 0.85);
+  text-shadow: 3px 3px 4px rgba(43, 42, 42, 0.85);
+}
+.shadowtextshallow {
+  text-shadow: 1px 1px 2px rgba(43, 42, 42, 0.85);
 }
 
 .shadowbox {
   box-shadow: 4px 4px 15px 3px rgba(0,0,0,0.44);
+}
+.shadowboxshallow {
+  box-shadow: 2px 2px 12px 3px rgba(0,0,0,0.44);
 }
 
 #HeroFace {
@@ -53,7 +69,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 22px;
-  line-height: 30px;
+  line-height: 1.6em;
 }
 
 h5, .h5 {
@@ -869,10 +885,11 @@ a:focus, a:active {
     color: #FFFFFF;
     line-height: 20px;
     float: left;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 15px;
     width: 210px;
     height: 50px;
+    letter-spacing: 1px;
 }
 .logo-container{
     margin-top: 10px;
