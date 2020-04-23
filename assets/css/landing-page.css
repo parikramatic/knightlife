@@ -35,7 +35,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
   text-shadow: 3px 3px 4px rgba(43, 42, 42, 0.85);
 }
 .shadowtextshallow {
-  text-shadow: 1px 1px 2px rgba(43, 42, 42, 0.85);
+  text-shadow: 1px 1px 4px rgba(43, 42, 42, 0.85);
 }
 
 .shadowbox {
@@ -458,6 +458,10 @@ a:focus, a:active {
   background-color: #FFFFFF;
 }
 
+.section-orange {
+  background-color: rgb(253, 240, 228);
+}
+
 .navbar {
   border: 0;
   font-size: 16px;
@@ -789,7 +793,7 @@ a:focus, a:active {
   left: auto;
 }
 .landing-page .section-clients {
-  padding: 40px 0px 70px 0px;
+  padding: 50px 0px 75px 0px;
 }
 .landing-page .section-clients .info .icon {
   background: transparent;
@@ -1186,6 +1190,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
         margin: 0px 0px 50px 0px;
    }
 
+   .landing-page .section-features > .container > h4{
+      margin-top: 0px;
+  }
+
+
    .landing-page .section-features .card{
         width: 100%;
         min-height: 390px;
@@ -1239,7 +1248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
 
    .landing-page .section-features .card  p{
         font-size: 16px;
-        line-height: 22px;
+        line-height: 28px;
         color: #777;
    }
 
@@ -1534,6 +1543,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
 }
 
 
+#signature {
+  filter: invert(100%); margin-bottom: 35px;
+}
+
 
 .landing-page .parallax .container{
   z-index: 2;
@@ -1608,8 +1621,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     transform: translateX(-50%);
   }
 
+  .landing-page .section-demo {
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
 
 
+  .landing-page .section-presentation .description{
+    padding: 25px 0px 30px 0px;
+  }
+
+/* Adjust card font sizes */
+.landing-page .section-features .card  h4{
+  font-weight: 300;
+  font-size: 28px;
+  margin: 30px 0 -15px;
+}
+
+.landing-page .section-features .card  p{
+  font-size: 20px;
+  line-height: 32px;
+  color: #777;
+}
+
+
+/* Adjust the bottom hero image */
+#signature {
+  transform: scale(0.6,0.6);
+  margin-bottom: 35px;
+}
+
+#tagline {
+  font-size: 28px;
+}
 
 
 }
@@ -1831,10 +1875,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   }
   .landing-page .section-presentation{
     margin: 0px 0px 0px 0px;
-  }
-  .landing-page .section-presentation{
     height: auto;
   }
+  .landing-page .section-presentation .description{
+    padding: 25px 0px 30px 0px;
+  }
+
   .landing-page .carousel-indicators{
     bottom: -30px;
   }
@@ -1863,33 +1909,60 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
 
   /* Reduce padding for clients sections */
   .landing-page .section-clients {
-    padding: 20px 0px 35px 0px;
+    padding: 50px 0px 75px 0px;
   }
 
   /* Center & shrink home image */
   .landing-page .section-presentation img {
-
     position: relative;
     width: 90%;
     height: auto;
     top: 20px;
-    /* left: 50%;
-    transform: translateX(-50%); */
-
-
   }
+
+  /* Hide carousel in small and xsmall */
+  .landing-page .section-demo {
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  #signature {
+    transform: scale(0.4,0.4);
+    margin-bottom: -30px;
+  }
+
+  #tagline {
+    font-size: 20px;
+  }
+
+  .landing-page .section-no-padding .parallax {
+    height: 500px;
+  }
+
+/* Adjust card font sizes */
+.landing-page .section-features .card  h4{
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 24px;
+  margin: 30px 0 -15px;
+}
+
+.landing-page .section-features .card  p{
+  font-size: 20px;
+  line-height: 32px;
+  color: #777;
+}
+
 
 }
 
+
+
 @media (max-width: 991px) {
 
-
-
-
-
-  .landing-page .section-presentation .description{
+  /* .landing-page .section-presentation .description{
     padding: 0px 0px 30px 0px;
-  }
+  } */
 
   div.description {
     text-align: center;
