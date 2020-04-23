@@ -789,7 +789,7 @@ a:focus, a:active {
   left: auto;
 }
 .landing-page .section-clients {
-  padding: 50px 0;
+  padding: 40px 0px 70px 0px;
 }
 .landing-page .section-clients .info .icon {
   background: transparent;
@@ -1009,7 +1009,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   z-index: 1;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
+
 .landing-page .parallax .parallax-background img{
   width: 100%;
   height: auto;
@@ -1058,6 +1060,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   width: 100%;
   display: inline-block;
   margin-top: 40px;
+  margin-left: 5px;
   }
 
   .landing-page .parallax .buttons h4{
@@ -1095,7 +1098,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
    .landing-page .section-presentation {
     overflow: hidden;
     width: 100%;
-    min-height: 600px;
+    min-height: 540px;
     margin-top: 30px;
    }
 
@@ -1566,10 +1569,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     overflow: hidden;
   }
 
-    .landing-page .parallax .parallax-background img {
+  .landing-page .parallax .parallax-background img {
     width: auto;
     height: 100%;
+    overflow-x: hidden;
   }
+
+  #HeroName {
+    font-size: 36px;
+    margin-left: 30px;
+    text-align: left;
+  }
+
+  #HeroDescription {
+    font-size: 22px;
+    margin-left: 30px;
+    text-align: left;
+  }
+
+  #HeroButtons {
+    margin-left: 30px;
+  }
+
+  .landing-page .parallax .description {
+    margin-top: 185px;
+  }
+
+  .landing-page .section-presentation {
+    margin-top: 10px;
+  }
+
+  /* Center & shrink home image */
+  .landing-page .section-presentation img {
+    position: relative;
+    height: 500px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+
 
 }
 
@@ -1617,31 +1658,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
       height: auto;
       width: 100%;
     } */
-
-    /* Reduce the size of the hero image */
-    .landing-page .parallax .parallax-image img.phone{
-      width: 180px;
-      height: 180px;
-      margin-top: 0px;
-    }
-
-    #HeroName {
-      font-size: 32px;
-    }
-
-    #HeroDescription {
-      font-size: 20px;
-      margin: 8px 0px 25px 0px;
-    }
-
-    h4.header-text {
-      margin: 0px 0px 10px 0px;
-    }
-
-    .landing-page .section-presentation {
-      padding-top: 0px;
-    }
-
 
 
 }
@@ -1798,6 +1814,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   .landing-page .parallax .parallax-background img {
     width: auto;
     height: 100%;
+    overflow-x: hidden;
   }
   .landing-page .parallax .description{
     margin-top: 30px;
@@ -1806,14 +1823,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     margin: 20px 0;
   }
   .landing-page .logos li{
-    display: block;
-    margin-top: 10px;
+    margin: 10px 0px 0px 0px;
+    transform: scale(0.8, 0.8);
   }
   .landing-page .logos ul{
     padding-top: 20px;
   }
   .landing-page .section-presentation{
-    margin: 0;
+    margin: 0px 0px 0px 0px;
   }
   .landing-page .section-presentation{
     height: auto;
@@ -1827,6 +1844,57 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   .footer nav.pull-left, .footer:not(.footer-big) nav > ul li, .pull-right {
     float: none !important;
   }
+
+  #HeroName {
+    font-size: 32px;
+  }
+
+  #HeroDescription {
+    font-size: 20px;
+    margin: 8px 0px 25px 0px;
+  }
+
+  /* Reduce the size of the hero image */
+  .landing-page .parallax .parallax-image img.phone{
+    width: 180px;
+    height: 180px;
+    margin-top: 0px;
+  }
+
+  /* Reduce padding for clients sections */
+  .landing-page .section-clients {
+    padding: 20px 0px 35px 0px;
+  }
+
+  /* Center & shrink home image */
+  .landing-page .section-presentation img {
+
+    position: relative;
+    width: 90%;
+    height: auto;
+    top: 20px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+
+
+  }
+
+}
+
+@media (max-width: 991px) {
+
+
+
+
+
+  .landing-page .section-presentation .description{
+    padding: 0px 0px 30px 0px;
+  }
+
+  div.description {
+    text-align: center;
+  }
+
 }
 
 
